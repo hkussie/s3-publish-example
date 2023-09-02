@@ -1,0 +1,20 @@
+{
+  "name": "s3-publish-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./S3/UploadToS3.js",
+    "read": "node ./S3/ReadFromS3.js",
+    "create:bucket": "node ./S3/V3/CreateBucket.js",
+    "verify:creation:bucket": "bash ./S3/shell/verify-buckets.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.405.0",
+    "aws-sdk": "^2.1450.0"
+  }
+}
