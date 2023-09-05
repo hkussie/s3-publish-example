@@ -9,6 +9,16 @@ provider "aws" {
     }
 }
 
+variable "bucket_prefix" {
+  description = "Prefix for the S3 bucket name"
+  type = string
+  default = "testing-bucket"
+}
+
+resource "random_id" "bucket_suffix" {
+  byte_length = 4
+}
+
 resource "aws_s3_bucket" "testing_bucket" {
-    bucket = "my-first-testing-bucket"
+  bucket = "${var.bucket_prefix}-${random_id.bucket_suffix.hex}"
 }
