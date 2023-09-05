@@ -1,0 +1,4 @@
+# terraform
+S3/terraform/.terraform
+S3/terraform/.terraform.lock.hcl
+S3/terraform/terraform.tfstate
