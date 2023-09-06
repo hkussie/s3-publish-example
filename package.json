@@ -4,11 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./S3/UploadToS3.js",
-    "read": "node ./S3/ReadFromS3.js",
-    "create:bucket": "node ./S3/V3/CreateBucket.js",
-    "verify:creation:bucket": "bash ./S3/shell/verify-buckets.sh",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:localstack": "bash ./S3/shell",
+    "list:buckets": "bash ./S3/shell/verify-buckets.sh"
   },
   "keywords": [],
   "author": "",
