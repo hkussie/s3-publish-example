@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start:localstack": "bash ./S3/shell",
+    "start:localstack": "bash ./S3/shell/start-localstack.sh",
     "list:buckets": "bash ./S3/shell/verify-buckets.sh"
   },
   "keywords": [],
@@ -12,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@aws-sdk/client-s3": "^3.405.0",
+    "@aws-sdk/client-sns": "^3.410.0",
     "aws-sdk": "^2.1450.0"
   }
 }
