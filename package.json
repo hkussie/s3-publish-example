@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start:localstack": "bash ./S3/shell/start-localstack.sh",
-    "list:buckets": "bash ./S3/shell/verify-buckets.sh"
+    "list:buckets": "bash ./S3/shell/verify-buckets.sh",
+    "publish:SNS": "node ./SNS/PublishSNS.js"
   },
   "keywords": [],
   "author": "",
